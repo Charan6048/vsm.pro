@@ -1,0 +1,61 @@
+Initial Setup
+--cd path/to/your/project--
+open in vscode file
+
+git init (This creates a .git folder, making it a Git repository.)
+
+
+Link your local repository to your GitHub repository:
+--git remote add origin https://github.com/username/repo-name.git--
+(Replace username with your GitHub username and repo-name with the repository name.)
+
+2. Push Local Changes to GitHub
+
+Step 2.1: Check Status
+Check which files are untracked or modified:  (L)
+--git status--
+
+Step 2.2: Add Files to the Staging Area
+To stage all files for commit:
+--git add .--
+
+
+To stage a specific file:
+--git add file-name-- 
+
+Step 2.3: Commit the Changes
+Commit your staged files with a meaningful message:
+--git commit -m "Your commit message"--    "--git commit -m "main--""
+
+Step 2.4: Push Changes to GitHub
+Push your changes to the main branch (or the relevant branch):
+--git push -u origin main--
+
+3. Pull Changes from GitHub to Your Laptop
+Download new changes from the remote repository without merging them:
+--git fetch origin--
+
+Step 3.2: Merge Changes
+Merge the fetched changes into your local branch:
+--git merge origin/main-- _____git pull origin main
+
+4. Sync Changes Between Local and Remote Repositories
+--git pull origin main--
+
+Step 4.2: Push Your Changes
+After making and committing changes locally, push them:
+--git push origin main--
+
+
+
+Check Remote Repository
+--git remote -v--
+Check the Current Branch
+--git branch--
+View Commit History
+--git log --oneline--
+
+Add the resolved files:
+git add file-name
+Continue the merge:
+--git commit--
